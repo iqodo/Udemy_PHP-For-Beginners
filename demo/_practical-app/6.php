@@ -3,10 +3,9 @@
 <?php include "includes/header.php";?>
 
 	<section class="content">
-
 		<aside class="col-xs-4">
 		
-		<?php Navigation();?>
+			<?php Navigation();?>
 			
 		</aside><!--SIDEBAR-->
 

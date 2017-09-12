@@ -1,7 +1,8 @@
 <?php
-   
 
-   $connection = mysqli_connect('localhost', 'root', '', 'loginapp');  
-    if(!$connection) {
-        die("Database connection failed");
-    }
+	$connection = mysqli_connect('localhost', 'root', '', 'udemy_loginapp');
+		if( ! $connection) {
+		die("Database connection failed");
+	}
+	
+?>
