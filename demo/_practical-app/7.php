@@ -49,12 +49,12 @@
 			$query = "SELECT * FROM `users`";
 			$result = mysqli_query($connection, $query);
 
-
 			// while ($row = mysqli_fetch_row($result)) {
 			while ($row = mysqli_fetch_assoc($result)) { 
 			?>
 
 				<pre><?php print_r($row); ?></pre>
+
 			
 			<?php }
 

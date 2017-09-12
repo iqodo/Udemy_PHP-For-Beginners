@@ -3,21 +3,21 @@
 <?php
 
     function createRows() {
-
         if(isset($_POST['submit'])) {
             global $connection;
                 
             $username = $_POST['username'];
             $password = $_POST['password'];
                 
-            $username = mysqli_real_escape_string($connection, $username );   
+            // Escapes special characters in a string for use in an SQL statement, taking into account the current charset of the connection
+            $username = mysqli_real_escape_string($connection, $username );
             $password = mysqli_real_escape_string($connection, $password );
                
 
             $hashFormat = "$2y$10$"; 
             $salt = "iusesomecrazystrings22";
             $hashF_and_salt = $hashFormat . $salt;
-            $password = crypt($password,$hashF_and_salt);   
+            $password = crypt($password,$hashF_and_salt);
             
             $query = "INSERT INTO users(username,password) ";
             $query .= "VALUES ('$username', '$password')";
@@ -47,8 +47,6 @@
             print_r($row);
         }
     }
-
-
 
 
     function showAllData() {
@@ -83,7 +81,7 @@
                 
             $result = mysqli_query($connection, $query);
             if(!$result) {
-                die("QUERY FAILED" . mysqli_error($connection));    
+                die("QUERY FAILED" . mysqli_error($connection));
             }else {
                 echo "Record Updated"; 
             }
@@ -98,13 +96,13 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
             $id = $_POST['id'];
-                
+            
             $query = "DELETE FROM users ";
             $query .= "WHERE id = $id ";
-                
+            
             $result = mysqli_query($connection, $query);
             if(!$result) {
-                die("QUERY FAILED" . mysqli_error($connection));    
+                die("QUERY FAILED" . mysqli_error($connection));
             } else {
                 echo "Record Deleted";
             }

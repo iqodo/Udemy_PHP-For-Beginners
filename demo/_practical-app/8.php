@@ -17,15 +17,20 @@
 	
 	<?php  
 
-	/*  Step 1 -Make a variable with some text as value
+	/*  
+		Step 1 -Make a variable with some text as value
 
 		Step 2 - Use crypt() function to encrypt it
 
 		Step 3 - Assign the crypt result to a variable
 
 		Step 4 - echo the variable
-
 	*/
+
+		$password = "Large";
+		$salt = '$2a$07$usesomesillystringfore2uDLvp1Ii2e./U9C8sBjqp8I90dH6hi';
+
+		echo crypt($password, $salt);
 	
 	?>
 
