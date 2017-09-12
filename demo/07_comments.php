@@ -6,20 +6,17 @@
 </head>
 <body> 
  
-<?php 
+	<?php 
 
-/* This function below displays text
+		/* This function below displays text
+		this is multiline comment */
 
-this is multiline comment */
-
-// One line comment
-    
-echo "Hello Student";  
-    
-    
-?>  
-   
-
+		// One line comment
+		    
+		echo "Hello Student";  
+	    
+	?>
+	
 </body>
 </html>
 

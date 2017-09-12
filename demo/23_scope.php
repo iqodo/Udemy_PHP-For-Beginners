@@ -7,27 +7,21 @@
 <body>
 <?php 
 
-$x = "outside"; // global
+	$x = "outside"; // global
 
-function convert() {
-global $x;
-$x = "inside"; // local 
+	function convert() {
+		global $x;
+		$x = "inside"; // local
+	}
 
-}
+	echo $x;
+	echo "<br>";
 
+	convert();
 
-echo $x;
+	echo $x;
+	echo $x;
 
-echo "<br>";
-
-convert();
-
-echo $x;
-
-echo $x;
-
-    
-    
 ?>
 
 </body>

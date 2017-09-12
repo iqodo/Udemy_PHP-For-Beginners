@@ -7,25 +7,18 @@
 <body>
    
 <?php 
-$number = 10;
-$number = 1000;
 
-$number = "Edwin";
-echo $number . "<br>";
+	$number = 10;
+	$number = 1000;
+	$number = "Edwin";
 
-define("NAME", 1000);
+	echo $number . "<br>";
 
-echo NAME;
+	define("NAME", 1000);
 
+	echo NAME;
 
-
-    
-    
-    
 ?>
-   
- 
-   
-    
+
 </body>
 </html>

@@ -1,10 +1,12 @@
 <?php
 
-$name = "SomeName";
-$value = 100;
-$expiration = time() + (60*60*24*7);
-setcookie($name,$value,$expiration);
+	$name = "SomeName";
+	$value = 100;
+	$expiration = time() + (60*60*24*7);
+	setcookie($name,$value,$expiration);
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,22 +14,20 @@ setcookie($name,$value,$expiration);
     <title>Document</title>
 </head>
 <body>
+
 <?php 
  
-if(isset($_COOKIE["SomeName"])) {
+	if(isset($_COOKIE["SomeName"])) {
 
-$someOne = $_COOKIE["SomeName"];
-    
-echo $someOne;
-    
-} else {
+		$someOne = $_COOKIE["SomeName"];
+		echo $someOne;
+	    
+	} else {
 
-$someOne = "";
+		$someOne = "";
 
-}
+	}
 
-    
-    
 ?>
 
 

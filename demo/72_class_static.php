@@ -5,25 +5,17 @@ class Car {
     static $wheels = 4;
     var $hood = 1;
 
-  
-   function MoveWheels(){
-    
-      Car::$wheels = 10;
-        
-    } 
-    
-    
+    function MoveWheels() {
+    	Car::$wheels = 10;   
+    }
 }
 
-$bmw = new Car();
+	$bmw = new Car();
 
-//$bmw->wheels;
+	//$bmw->wheels;
 
-Car::MoveWheels();
+	Car::MoveWheels();
 
-//echo Car::$wheels;
-
-
-
+	//echo Car::$wheels;
 
 ?>

@@ -8,16 +8,13 @@ class Car {
     
     var $doors = 4;
     
-     function showProperty(){
+    function showProperty() {
     
         echo $this->wheels . " Public Wheels Inside Car Class <br> ";
         echo $this->hood . " Protected Hood Inside Car Class<br>";
-         echo $this->engine . " Private Engine Inside Car Class<br>";
+        echo $this->engine . " Private Engine Inside Car Class<br>";
     
     } 
-  
-   
-
 }
 
 $bmw = new Car();
@@ -25,18 +22,19 @@ $semi = new Semi();
 
 class Semi extends Car {
     
-       function showProperty(){
+   function showProperty() {
     
-      echo $this->wheels . " Public Wheels inside the Semi Class<br>"; 
-      echo $this->hood . " Protected Hood inside the Semi Class <br>";
+        echo $this->wheels . " Public Wheels inside the Semi Class<br>"; 
+        echo $this->hood . " Protected Hood inside the Semi Class <br>";
            
-//    echo $this->engine;
-        
-    
+        // echo $this->engine;
+
     } 
 
 }
+
 echo $bmw->showProperty();
 echo $semi->showProperty();
 echo $bmw->wheels . " Public Wheels Outside all the classes" ;
+
 ?>

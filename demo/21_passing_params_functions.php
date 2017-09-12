@@ -8,43 +8,24 @@
 
 <?php 
 
-function greeting($message){
-    echo $message;
-}
+	function greeting($message){
+	    echo $message;
+	}
 
+	greeting("Hi Customer how are you?");
 
-greeting("Hi Customer how are you?");
-    
-    
 ?>
 
 <?php 
-    
+	    
+	function addNumbers($number1, $number2) {
+		$sum = $number1 + $number2;
+		echo $sum;
+	}
 
-function addNumbers($number1, $number2){
-
-$sum = $number1 + $number2;
-
-echo $sum;
-    
-}
-
-
-addNumbers(345,3462);
+	addNumbers(345,3462);
     
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

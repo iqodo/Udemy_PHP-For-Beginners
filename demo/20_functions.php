@@ -8,38 +8,24 @@
 
 <?php 
 
-function init(){
+	function init(){
+		say_Something();
+		echo "<br>";
+		calculate();  
+	}
+
+	function calculate() {
+	    echo 456 + 345;
+	}
 
 
-say_Something();
-echo "<br>";
-calculate();  
+	function say_Something() {
+	   echo "Hello Student, do you like the class? yes? okay great";
+	}
 
-}
+	init();
 
-
-
-
-function calculate(){
-
-    echo 456 + 345;
-
-}
-
-
-function say_Something(){
-
-   echo "Hello Student, do you like the class? yes? okay great";
-
-}
-
-  init();  
-    
-    
-    
 ?>
-
-
 
 </body>
 </html>

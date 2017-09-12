@@ -1,13 +1,9 @@
-<?php session_start();
+<?php 
 
-echo $_SESSION['greeting'];
-
-
+	session_start();
+	echo $_SESSION['greeting'];
+	
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">

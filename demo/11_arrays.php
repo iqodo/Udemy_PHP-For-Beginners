@@ -5,16 +5,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php 
 
-$numberList = array(267,8765,345,'5345', 345, '<h1>Hello</h1>');
+	<?php 
 
-//print_r($numberList);
+		$numberList = array(267,8765,345,'5345', 345, '<h1>Hello</h1>');
 
- echo $numberList[5];
-    
-    
-?>
+		//print_r($numberList);
+
+	 	echo $numberList[5];
+
+	?>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
-<?php session_start();
+<?php 
 
-$_SESSION['greeting'] = "Hello Student this is awesome";
+	session_start();
+	$_SESSION['greeting'] = "Hello Student this is awesome";
 
 ?>
 

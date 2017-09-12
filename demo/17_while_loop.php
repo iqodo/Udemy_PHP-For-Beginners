@@ -8,20 +8,16 @@
 
 <?php 
 
-$counter = 0;
-while($counter <= 10 ){
+	$counter = 0;
+	while($counter <= 10 ) {
 
-    echo $counter;
-    $counter++;
-//    $counter = $counter + 1;
+	    echo $counter;
+	    $counter++;
+		// $counter = $counter + 1;
 
-}
-
-
+	}
 
 ?>
-
-
 
 </body>
 </html>

@@ -1,11 +1,6 @@
 <?php 
-
- print_r($_GET);
-
-
+	print_r($_GET);
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,19 +10,14 @@
 </head>
 <body>
 
-<?php 
+	<?php 
 
-$id = 10;
-$button = "CLICK HERE NOW";
-    
-    
-?>
+		$id = 10;
+		$button = "CLICK HERE NOW";
+	    
+	?>
 
-
-<a href="get.php?id=<?php echo $id;?>"><?php echo $button;?></a>
-
-
-
+	<a href="get.php?id=<?php echo $id;?>"><?php echo $button;?></a>
 
 </body>
 </html>
