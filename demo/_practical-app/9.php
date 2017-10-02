@@ -1,3 +1,17 @@
+<?php 
+
+	$cookie_name = "user";
+	$cookie_value = "John Doe";
+	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+?>
+
+<?php 
+	session_start();
+	$_SESSION['value'] = 100;
+
+?>
+
 <?php include "functions.php"; ?>
 <?php include "includes/header.php";?>
 
@@ -19,9 +33,18 @@
 			Step 3 - Start a session and set it to value, any value you want.
 			*/
 
-			
-		
+			$id = "Marco";
+
 		?>
+
+			<p><a href="9.php?id=<?php echo $id; ?>">CLICK HERE</a></p>
+			<p><?php if( isset($_GET['id']) ){ echo $_GET['id']; } ?> </p>
+
+			<pre><?php print_r($_GET); ?></pre>
+
+			<pre><?php print_r($_COOKIE); ?></pre>
+
+			<pre><?php print_r($_SESSION); ?></pre>
 
 		</article><!--MAIN CONTENT-->
 <?php include "includes/footer.php"; ?>
