@@ -11,7 +11,7 @@ class Car {
         $this->wheels = 10;
     }
     
-    function CreateDoors(){
+    function CreateDoors() {
         $this->doors = 6;
     }
 
@@ -24,6 +24,5 @@ echo $bmw->wheels . "<br>";
 echo $truck->wheels = 10 . "<br>";
 $truck->CreateDoors();
 echo $truck->doors;
-
 
 ?>

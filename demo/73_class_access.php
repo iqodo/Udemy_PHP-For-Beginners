@@ -3,7 +3,7 @@
 class Car {
     
     public $wheels = 4; // Can be used anywhere
-    protected $hood = 1;// only available inside        class or sub-classes or methods
+    protected $hood = 1;// only available inside class or sub-classes or methods
     private $engine = 1; // Only available inside the class
     
     var $doors = 4;
