@@ -1,38 +1,26 @@
 <?php include "functions.php"; ?>
 <?php include "includes/header.php";?>
 
-	<section class="content">
+<section class="content">
 
 	<aside class="col-xs-4">
 
-	<?php Navigation();?>
-			
+		<?php Navigation();?>
+					
 	</aside><!--SIDEBAR-->
 
+	<article class="main-content col-xs-8">
 
-<article class="main-content col-xs-8">
+		<?php  
 
-<?php  
+			/*  
+			Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
+			Step2: Make a forloop  that displays 10 numbers
+			Step3: Make a switch Statement that test againts one condition with 5 cases
+			*/
+			
+		?>
 
-/*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
-
-
-
-	Step 2: Make a forloop  that displays 10 numbers
-
-
-	Step 3 : Make a switch Statement that test againts one condition with 5 cases
-
- */
-
-	
-?>
-
-
-
-
-
-
-</article><!--MAIN CONTENT-->
+	</article><!--MAIN CONTENT-->
 	
 <?php include "includes/footer.php"; ?>

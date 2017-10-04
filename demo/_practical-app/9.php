@@ -7,6 +7,7 @@
 ?>
 
 <?php 
+
 	session_start();
 	$_SESSION['value'] = 100;
 
@@ -15,36 +16,37 @@
 <?php include "functions.php"; ?>
 <?php include "includes/header.php";?>
 
-	<section class="content">
-		<aside class="col-xs-4">
-			<?php Navigation();?>
-		</aside><!--SIDEBAR-->
+<section class="content">
 
-		<article class="main-content col-xs-8">
+	<aside class="col-xs-4">
 
-		<?php 
+		<?php Navigation();?>
 
-			/*  
-			Create a link saying Click Here, and set 
-			the link href to pass some parameters and use the GET super global to see it
+	</aside><!--SIDEBAR-->
 
-			Step 2 - Set a cookie that expires in one week
+	<article class="main-content col-xs-8">
 
-			Step 3 - Start a session and set it to value, any value you want.
-			*/
+	<?php 
 
-			$id = "Marco";
+		/*  
+		Step1: Create a link saying Click Here, and set the link href to pass some parameters and use the GET super global to see it.
+			Step2: Set a cookie that expires in one week.
+			Step3: Start a session and set it to value, any value you want.
+		*/
 
-		?>
+		$id = "Marco";
 
-			<p><a href="9.php?id=<?php echo $id; ?>">CLICK HERE</a></p>
-			<p><?php if( isset($_GET['id']) ){ echo $_GET['id']; } ?> </p>
+	?>
 
-			<pre><?php print_r($_GET); ?></pre>
+		<p><a href="9.php?id=<?php echo $id; ?>">CLICK HERE</a></p>
+		<p><?php if( isset($_GET['id']) ){ echo $_GET['id']; } ?> </p>
 
-			<pre><?php print_r($_COOKIE); ?></pre>
+		<pre><?php print_r($_GET); ?></pre>
 
-			<pre><?php print_r($_SESSION); ?></pre>
+		<pre><?php print_r($_COOKIE); ?></pre>
 
-		</article><!--MAIN CONTENT-->
+		<pre><?php print_r($_SESSION); ?></pre>
+
+	</article><!--MAIN CONTENT-->
+
 <?php include "includes/footer.php"; ?>
